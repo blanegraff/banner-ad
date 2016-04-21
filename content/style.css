@@ -1,0 +1,31 @@
+html,
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 250px;
+    height: 250px;
+}
+
+img#logo { 
+    margin: 10px;
+    border: 1px solid black;
+    margin-left: 530px;
+    border-radius: 10px;
+}
+
+h3 {
+      text-align: center;
+      letter-spacing: 4px;
+}
+
+#firstParagraph {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    margin: 10px;
+}

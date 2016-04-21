@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="content/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="content/style.css">
+    <title>Banner Ad</title>
+</head>
+
+<body>
+    <!--Navigation Bar Begins-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                        </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html"><i class="fa fa-angle-double-right"></i> About Me</a></li>
+                    <li><a href="projects.html"><i class="fa fa-code"></i> Projects</a></li>
+                    <li><a href="contact-me.html"><i class="fa fa-envelope-o"></i> Contact Me</a></li>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!--Navigation Bar Ends-->
+    <img id="logo" src="images/logo.png" alt="logo" style="width:158px;height:128px" ;>
+
+    <main class="container" id="mainContent">
+        <p id="firstParagraph">My name is Brittany Lanegraff and I am currently in the Interactive Web Design & Development program at Georgian College. My strength is in design, but I hope to learn and develop my skills in programming. I come from a photography and illustration background which I am sure will be a great asset to assist me in styling and designing websites. I love the process of putting all the elements together that are required for a fully functional and beautiful website, it is very rewarding and enjoyable. I hope to be able to succeed in having a great career in the web design and development field.</p>
+        <canvas id="canvas" resize hidpi="off" style="background:#e74c3c"></canvas>
+
+        <!-- JavaScript Section -->
+        <script type="text/javascript" src="scripts/lib/paper-full.js"></script>
+        <script src="Scripts/lib/bootstrap.min.js"></script>
+        <script type="text/paperscript" src="scripts/main.js" canvas="canvas"></script>
+</body>
+
+</html>
