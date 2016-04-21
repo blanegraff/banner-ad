@@ -1,10 +1,13 @@
- var count = 50;
 
+// number of bubbles
+var count = 50;
+
+// create cirlces
 var path = new Path.Circle({
 	center: [0, 0],
 	radius: 10,
-	fillColor: '#b7bcc1',
-	strokeColor: '#a9afb5'
+	fillColor: '#016451',
+	strokeColor: '#007660'
 });
 
 var symbol = new Symbol(path);
@@ -17,12 +20,14 @@ for (var i = 0; i < count; i++) {
 	placedSymbol.scale(i / count);
 }
 
+// add text & style
 var text = new PointText({
 	point: view.center,
 	justification: 'center',
 	fontSize: 20,
-	fillColor: 'white',
+	fillColor: 'black',
     
+//      text shadows
     shadowColor: new Color(0, 0, 0),
     // Set the shadow blur radius to 12:
     shadowBlur: 18,
@@ -32,6 +37,7 @@ var text = new PointText({
 });
 
 var destination = Point.random() * view.size;
+
 function onFrame(event) {
 	for (var i = 0; i < count; i++) {
 		var item = project.activeLayer.children[i];
@@ -48,7 +54,7 @@ function onFrame(event) {
 	
 	text.position.x = 120;
 	
-	text.content = "Checkout My Projects";
+	text.content = "CLICK to See My Projects";
 	text.onClick = function(event) {
         OpenInNewTab("project.html");
 }
