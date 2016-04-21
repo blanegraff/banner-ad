@@ -1,13 +1,13 @@
 
 // number of bubbles
-var count = 50;
+var count = 70;
 
 // create cirlces
 var path = new Path.Circle({
 	center: [0, 0],
 	radius: 10,
-	fillColor: '#b1a9b1',
-	strokeColor: '#a79aa6'
+	fillColor: '#989898',
+	strokeColor: '#aaa7af'
 });
 
 var symbol = new Symbol(path);
@@ -24,8 +24,8 @@ for (var i = 0; i < count; i++) {
 var text = new PointText({
 	point: view.center,
 	justification: 'center',
-	fontSize: 20,
-	fillColor: 'black',
+	fontSize: 18,
+	fillColor: '#aaa7af',
     
 //      text shadows
     shadowColor: new Color(0, 0, 0),
@@ -54,7 +54,7 @@ function onFrame(event) {
 	
 	text.position.x = 120;
 	
-	text.content = "Checkout My Projects";
+	text.content = "Click For My Projects";
 	text.onClick = function(event) {
         OpenInNewTab("project.html");
 }
