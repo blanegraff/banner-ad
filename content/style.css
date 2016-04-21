@@ -5,11 +5,11 @@ body {
     height: 100%;
 }
 
-/* Scale canvas with resize attribute to full size */
 canvas[resize] {
     width: 250px;
     height: 250px;
     border: 1px solid black;
+    background: white;
 }
 
 img#logo { 
