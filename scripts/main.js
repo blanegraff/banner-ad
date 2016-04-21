@@ -6,7 +6,7 @@ var count = 50;
 var path = new Path.Circle({
 	center: [0, 0],
 	radius: 10,
-	fillColor: '#016451',
+	fillColor: '#b7bcc1',
 	strokeColor: '#007660'
 });
 
@@ -54,7 +54,7 @@ function onFrame(event) {
 	
 	text.position.x = 120;
 	
-	text.content = "CLICK to See My Projects";
+	text.content = "Checkout My Projects";
 	text.onClick = function(event) {
         OpenInNewTab("project.html");
 }
