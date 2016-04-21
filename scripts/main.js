@@ -6,8 +6,8 @@ var count = 50;
 var path = new Path.Circle({
 	center: [0, 0],
 	radius: 10,
-	fillColor: '#b7bcc1',
-	strokeColor: '#007660'
+	fillColor: '#b1a9b1',
+	strokeColor: '#a79aa6'
 });
 
 var symbol = new Symbol(path);
