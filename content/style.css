@@ -9,6 +9,7 @@ body {
 canvas[resize] {
     width: 250px;
     height: 250px;
+    border: 1px solid black;
 }
 
 img#logo { 
@@ -26,6 +27,7 @@ h3 {
 #firstParagraph {
     text-align: center;
     padding: 10px;
-    letter-spacing: 2px;
-    margin: 10px;
+    letter-spacing: 1px;
+    margin: 30px;
+    color: black;
 }
