@@ -3,8 +3,8 @@
 var path = new Path.Circle({
 	center: [0, 0],
 	radius: 10,
-	fillColor: '#c0392b',
-	strokeColor: '#c0392b'
+	fillColor: '#0d0d0d',
+	strokeColor: '#b0b0b0'
 });
 
 var symbol = new Symbol(path);
