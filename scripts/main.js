@@ -25,7 +25,7 @@ var text = new PointText({
 	point: view.center,
 	justification: 'center',
 	fontSize: 18,
-	fillColor: '#aaa7af',
+	fillColor: 'black',
     
 //      text shadows
     shadowColor: new Color(0, 0, 0),
