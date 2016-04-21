@@ -9,7 +9,7 @@ canvas[resize] {
     width: 250px;
     height: 250px;
     border: 1px solid black;
-    background: white;
+    margin-left: 50px;
 }
 
 img#logo { 
