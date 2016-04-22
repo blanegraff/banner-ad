@@ -7,12 +7,12 @@ var path = new Path.Circle({
 	center: [0, 0],
 	radius: 10,
 	fillColor: '#dcdcdc',
-	strokeColor: '#e3e1e1'
+	strokeColor: '#bdbdbd'
 });
 
 var symbol = new Symbol(path);
 
-
+// circle positions
 for (var i = 0; i < count; i++) {
 
 	var center = Point.random() * view.size;
@@ -24,13 +24,13 @@ for (var i = 0; i < count; i++) {
 var text = new PointText({
 	point: view.center,
 	justification: 'center',
-	fontSize: 18,
-	fillColor: 'black',
+	fontSize: 17,
+	fillColor: '404040',
 
 	//      text shadows
 	shadowColor: new Color(0, 0, 0),
 	// Set the shadow blur radius to 12:
-	shadowBlur: 18,
+	shadowBlur: 20,
 	// Offset the shadow by { x: 5, y: 5 }
 	shadowOffset: new Point(5, 5)
 
@@ -53,7 +53,7 @@ function onFrame(event) {
 
 	text.position += vector / 50;
 // text inside canvas
-	text.content = "&#10551; Checkout My Projects &#10550;";
+	text.content = "   >>  Checkout My Projects  <<   ";
 
 	if (vector.length < 20) {
 		destination = Point.random() * view.size;
