@@ -8,7 +8,7 @@ body {
 canvas[resize] {
     width: 508px;
     height: 80px;
-    margin-left: 320px;
+    margin-left: 310px;
     border: 1px solid darkgrey;
     border-radius: 3px;
     box-shadow: 6px 15px 26px -9px rgba(0,0,0,0.53);
