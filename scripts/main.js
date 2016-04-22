@@ -53,8 +53,7 @@ function onFrame(event) {
 
 	text.position += vector / 30;
 
-	text.content = "Click For My Projects";
-	text.content = Math.round(vector.length);
+	text.content = "Click For My Projects"(vector.length);
 
 	if (vector.length < 5) {
 		destination = Point.random() * view.size;
