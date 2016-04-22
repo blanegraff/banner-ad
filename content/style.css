@@ -8,19 +8,20 @@ body {
 canvas[resize] {
     width: 508px;
     height: 80px;
-    margin-left: 200px;
+    margin-left: 300px;
     border: 1px solid darkgrey;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 canvas:hover {
         opacity: 0.8;
 }
 
-canvas {
+a canvas {
   position: relative;
 }
-canvas:before, canvas:after {
+
+a canvas:before, a canvas:after {
   z-index: -1;
   position: absolute;
   content: "";
@@ -28,12 +29,12 @@ canvas:before, canvas:after {
   left: 10px;
   width: 50%;
   top: 80%;
-  max-width:300px;
+  max-width: 300px;
   background: #777;
   box-shadow: 0 15px 10px #777;
   transform: rotate(-3deg);
 }
-canvas:after {
+a canvas:after {
   transform: rotate(3deg);
   right: 10px;
   left: auto;
