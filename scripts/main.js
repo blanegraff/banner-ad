@@ -1,4 +1,6 @@
-
+ "use strict";
+(function () {
+	
 // number of bubbles
 var count = 70;
 
@@ -53,8 +55,9 @@ function onFrame(event) {
 
 	text.position += vector / 50;
 // text inside canvas
-	text.content = "   >>  Checkout My Projects  <<   ";
-
+	text.content = "   > >  Checkout My Projects  < <   ";
+	
+// distance between the path and the destination
 	if (vector.length < 20) {
 		destination = Point.random() * view.size;
 	}
@@ -69,3 +72,5 @@ function OpenInNewTab(url) {
 	var win = window.open(url, '_blank');
 	win.focus();
 }
+
+})();
