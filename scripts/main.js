@@ -51,7 +51,7 @@ function onFrame(event) {
 
 	var vector = destination - text.position;
 
-	text.position += vector / 30;
+	text.position += vector / 20;
 
 	text.content = "Click For My Projects";
 
