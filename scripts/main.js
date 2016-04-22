@@ -52,7 +52,7 @@ function onFrame(event) {
 
 	text.position += vector / 50;
 // text inside canvas
-	text.content = "   > >  C HE C K O U T  M Y  P R O J E C T S  < <   ";
+	text.content = "     > >  C H E C K O U T  M Y  P R O J E C T S  < <     ";
 	
 // distance between the path and the destination
 	if (vector.length < 20) {
