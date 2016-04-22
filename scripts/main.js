@@ -53,7 +53,7 @@ function onFrame(event) {
 
 	text.position += vector / 50;
 // text inside canvas
-	text.content = "| Checkout My Projects |";
+	text.content = "&#10551; Checkout My Projects &#10550;";
 
 	if (vector.length < 20) {
 		destination = Point.random() * view.size;
