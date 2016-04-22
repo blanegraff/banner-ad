@@ -11,33 +11,13 @@ canvas[resize] {
     margin-left: 300px;
     border: 1px solid darkgrey;
     border-radius: 3px;
+    -webkit-box-shadow: 6px 15px 26px -9px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 15px 26px -9px rgba(0,0,0,0.53);
+    box-shadow: 6px 15px 26px -9px rgba(0,0,0,0.53);
 }
 
 canvas:hover {
         opacity: 0.8;
-}
-
-a canvas {
-  position: relative;
-}
-
-a canvas:before, a canvas:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  box-shadow: 0 15px 10px #777;
-  transform: rotate(-3deg);
-}
-a canvas:after {
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
 }
 
 img#logo { 
