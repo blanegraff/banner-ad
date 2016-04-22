@@ -6,8 +6,8 @@ var count = 70;
 var path = new Path.Circle({
 	center: [0, 0],
 	radius: 10,
-	fillColor: '#989898',
-	strokeColor: '#aaa7af'
+	fillColor: '#dcdcdc',
+	strokeColor: '#e3e1e1'
 });
 
 var symbol = new Symbol(path);
@@ -37,12 +37,12 @@ var text = new PointText({
 });
 
 var destination = Point.random() * view.size;
-
+// move text - random positions
 function onFrame(event) {
 	for (var i = 0; i < count; i++) {
 		var item = project.activeLayer.children[i];
 
-		item.position.x += item.bounds.width / 20;
+		item.position.x += item.bounds.width / 10;
 
 		if (item.bounds.left > view.size.width) {
 			item.position.x = -item.bounds.width;
@@ -51,14 +51,14 @@ function onFrame(event) {
 
 	var vector = destination - text.position;
 
-	text.position += vector / 20;
-
-	text.content = "Click For My Projects";
+	text.position += vector / 50;
+// text inside canvas
+	text.content = "| Checkout My Projects |";
 
 	if (vector.length < 20) {
 		destination = Point.random() * view.size;
 	}
-
+//  on click - brings you to project.js
 	text.onClick = function (event) {
 		OpenInNewTab("project.html");
 	}
