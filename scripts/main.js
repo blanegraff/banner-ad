@@ -1,6 +1,3 @@
- "use strict";
-(function () {
-	
 // number of bubbles
 var count = 70;
 
@@ -72,5 +69,3 @@ function OpenInNewTab(url) {
 	var win = window.open(url, '_blank');
 	win.focus();
 }
-
-})();
