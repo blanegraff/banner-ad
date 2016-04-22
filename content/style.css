@@ -6,8 +6,8 @@ body {
 }
 
 canvas[resize] {
-    width: 468px;
-    height: 60px;
+    width: 508px;
+    height: 80px;
     margin-left: 200px;
     border: 1px solid darkgrey;
     border-radius: 2px;
