@@ -24,7 +24,7 @@ var text = new PointText({
 	point: view.center,
 	justification: 'center',
 	fontSize: 17,
-	fillColor: '404040',
+	fillColor: '#404040',
 
 	//      text shadows
 	shadowColor: new Color(0, 0, 0),
@@ -52,7 +52,7 @@ function onFrame(event) {
 
 	text.position += vector / 50;
 // text inside canvas
-	text.content = "   > >  Checkout My Projects  < <   ";
+	text.content = "   > >  C HE C K O U T  M Y  P R O J E C T S  < <   ";
 	
 // distance between the path and the destination
 	if (vector.length < 20) {
